@@ -1,6 +1,8 @@
 package firebase.auth;
 
 @:native("firebase.auth.EmailAuthProvider") extern class EmailAuthProvider extends AuthProvider {
-	public function new();
+	public static var PROVIDER_ID:String;
 	
+	public function new();
+
 }
