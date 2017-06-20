@@ -15,6 +15,7 @@ abstract AuthErrorCode(String) {
 	var UserDisabled = "auth/user-disabled";
 	var UserTokenExpired ="auth/user-token-expired";
 	var WebStorageUnsupported = "auth/web-storage-unsupported";
+	var EmailAlreadyInUse = "auth/email-already-in-use";
 }
 
 @:native("firebase.auth.Error") extern class Error {
