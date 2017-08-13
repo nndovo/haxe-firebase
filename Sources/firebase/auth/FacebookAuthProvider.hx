@@ -4,6 +4,7 @@ package firebase.auth;
 	public static var PROVIDER_ID:String;
 	
 	public function new();
+	static public function credential(token:String):AuthCredential;
 
 	public function addScope(scope:String):Void;
 	public function setCustomParameters(parameters:Dynamic):Void;

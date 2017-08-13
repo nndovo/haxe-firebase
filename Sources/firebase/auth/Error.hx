@@ -27,6 +27,10 @@ abstract AuthErrorCode(String) {
 	var UserNotFound = "auth/user-not-found";
 	var WeakPassword = "auth/weak-password";
 	var WrongPassword = "auth/wrong-password";
+	var PopupCancelled = "auth/cancelled-popup-request";
+	var PopupBlocked = "auth/popup-blocked";
+	var PopupClosed = "auth/popup-closed-by-user";
+	var CredentialInUse = "auth/credential-already-in-use";
 }
 
 @:native("firebase.auth.Error") extern class Error {
